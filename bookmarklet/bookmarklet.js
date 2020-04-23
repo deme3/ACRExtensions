@@ -93,7 +93,10 @@ if (typeof w === 'object') {
                 var dictionaryUIWidget = document.createElement("div");
                 dictionaryUIWidget.id = "dictionary-widget-ext";
                 dictionaryUIWidget.className = "ui-dialog ui-widget ui-widget-content ui-corner-all kindle_menu";
-                dictionaryUIWidget.style = "display: block; z-index: 1002; outline: 0px; max-height: 310px; top: " + (targetPosition.top - 320) + "px; left: " + (targetPosition.left) + "px; max-width:" + mainDialog.width() + "px";
+                var topPosition = targetPosition.top - 320;
+                if(topPosition < 0)
+                    topPosition = targetPosition.top + 32;
+                dictionaryUIWidget.style = "display: block; z-index: 1002; outline: 0px; max-height: 310px; top: " + topPosition + "px; left: " + (targetPosition.left) + "px; max-width:" + mainDialog.width() + "px";
                 var dictionaryUIWidgetContent = document.createElement("div");
                 dictionaryUIWidgetContent.className = "ui-dialog-content ui-widget-content";
                 dictionaryUIWidgetContent.style = "display: block; width: auto; min-height: 0px; max-height: 310px; overflow-y: auto; height: auto";
