@@ -8,7 +8,7 @@ This repo has been forked to implement a live dictionary inside the Kindle Cloud
 
 Installation explained below, along with the "Copy" original feature of this code.
 
-![Screenshot](screenshot.png "Screenshot")
+![Screenshot](./screenshot.png "Screenshot")
 ## Browser Bookmarklet
 
 The Amazon Cloud Reader does not allow the user to copy text. And in the words of the Big Lebowski, _"this aggression will not stand, man!"_.
