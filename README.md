@@ -2,6 +2,12 @@
 
 Amazon Cloud Reader extensions
 
+## Integrated German Dictionary
+
+This repo has been forked to implement a live dictionary inside the Kindle Cloud Reader, since the desktop app sucks and doesn't allow custom dictionaries. Every selected word will be translated from German to English via pocket.dict.cc.
+
+Installation explained below, along with the "Copy" original feature of this code.
+
 ## Browser Bookmarklet
 
 The Amazon Cloud Reader does not allow the user to copy text. And in the words of the Big Lebowski, _"this aggression will not stand, man!"_.
